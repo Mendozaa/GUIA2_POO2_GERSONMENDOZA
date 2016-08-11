@@ -14,13 +14,13 @@ public class Persona {
     private String NombPers;
     private String ApelPers;
     private String FotoPers;
-    private int CodiTipoPers;
+    private TipoPersona CodiTipoPers;
     private String GenePers;
     private String FechNaciPers;
     private String DuiPers;
     private String NitPers;
     private String TipoSangPers;
-    private int CodiUbicPers;
+    private Ubicacion CodiUbicPers;
     private String FechAlta;
     private String FechBaja;
     private int EstaPers;
@@ -28,7 +28,7 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(int CodiPers, String NombPers, String ApelPers, String FotoPers, int CodiTipoPers, String GenePers, String FechNaciPers, String DuiPers, String NitPers, String TipoSangPers, int CodiUbicPers, String FechAlta, String FechBaja, int EstaPers) {
+    public Persona(int CodiPers, String NombPers, String ApelPers, String FotoPers, TipoPersona CodiTipoPers, String GenePers, String FechNaciPers, String DuiPers, String NitPers, String TipoSangPers, Ubicacion CodiUbicPers, String FechAlta, String FechBaja, int EstaPers) {
         this.CodiPers = CodiPers;
         this.NombPers = NombPers;
         this.ApelPers = ApelPers;
@@ -44,7 +44,7 @@ public class Persona {
         this.FechBaja = FechBaja;
         this.EstaPers = EstaPers;
     }
-  
+
     public int getCodiPers() {
         return CodiPers;
     }
@@ -77,11 +77,11 @@ public class Persona {
         this.FotoPers = FotoPers;
     }
 
-    public int getCodiTipoPers() {
+    public TipoPersona getCodiTipoPers() {
         return CodiTipoPers;
     }
 
-    public void setCodiTipoPers(int CodiTipoPers) {
+    public void setCodiTipoPers(TipoPersona CodiTipoPers) {
         this.CodiTipoPers = CodiTipoPers;
     }
 
@@ -125,11 +125,11 @@ public class Persona {
         this.TipoSangPers = TipoSangPers;
     }
 
-    public int getCodiUbicPers() {
+    public Ubicacion getCodiUbicPers() {
         return CodiUbicPers;
     }
 
-    public void setCodiUbicPers(int CodiUbicPers) {
+    public void setCodiUbicPers(Ubicacion CodiUbicPers) {
         this.CodiUbicPers = CodiUbicPers;
     }
 
@@ -157,7 +157,8 @@ public class Persona {
         this.EstaPers = EstaPers;
     }
     
-
+    
+    
     @Override
     public String toString() {
         return NombPers + " " + ApelPers;
